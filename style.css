@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.cal_box {
+    width: auto;
+    height: fit-content;
+    border: solid;
+    padding: 20px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+#base {
+    margin-left: 46px;
+}
+
+button {
+    margin: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}

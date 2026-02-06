@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <div class="cal_box">
+            <h1>Power calculater</h1>
+            <p>please enter the correct base and exponent to calculate power</p>
+            <div class="inputs">
+                <div class="input_chiled">
+                    <label id="base_id">Enter the base number</label>
+                    <input id="base" type="number"><br>
+
+                    <label id="exponent_id">Enter the exponent number</label>
+                    <input id="exponent" type="number"><br>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="submit" type="submit">Submit</button>
+                <button id="reset" type="reset">Reset</button>
+            </div>
+
+            <div class="answer_box">
+                <p>Answer is = </p>
+                <p id="answer"></p>
+            </div>
+
+        </div>
+
+    </form>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
