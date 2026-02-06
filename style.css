@@ -33,35 +33,42 @@ p {
 }
 
 
+/* Container for the whole input section */
 .inputs {
     display: flex;
-    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
     margin-top: 20px;
 }
 
+/* This is the secret sauce: 
+   It forces the labels and inputs into a single vertical column */
 .input_chiled {
     display: flex;
     flex-direction: column;
+    width: 100%; /* Ensures it fills the gray box */
 }
 
 label {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-size: 0.9rem;
+    text-align: left; /* Better readability than centered labels */
 }
 
 input {
     padding: 12px;
-    margin: 8px 0;
     border-radius: 6px;
-    border: none;
+    border: 1px solid #ccc;
     font-size: 1rem;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; 
+    box-sizing: border-box; /* Crucial: keeps padding inside the width */
+    margin: 0; /* Reset margins to prevent shifting */
 }
 
-
+/* Remove your old #base margin-left entirely! */
 #base {
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 
