@@ -1,53 +1,106 @@
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 h1 {
-    font-size: medium;
+    font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 p {
     text-align: center;
+    font-size: 0.9rem;
 }
 
+
 .cal_box {
-    width: auto;
-    height: fit-content;
-    border: solid;
-    padding: 20px;
-    align-items: center;
-    border-radius: 5px;
-    background-color: gray;
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border: none;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #4a4a4a;
     color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
 
 .inputs {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+
+.input_chiled {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
 input {
-    margin: 10px;
-    border-radius: 5px;
-
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 
 #base {
-    margin-left: 46px;
+    margin-left: 0; 
 }
 
-button {
-    margin: 20px;
-}
 
 .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#reset {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.answer_box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
 }
